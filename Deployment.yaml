@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: thedevopsgirl
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: thedevopsgirl
+  template:
+    metadata:
+      labels:
+        app: thedevopsgirl
+    spec:
+      containers:
+          - name: thedevopsgirl
+            image: taniaduggal60/cicd-pipeline
+            imagePullPolicy: Always
+            ports:
+            - containerPort: 80
