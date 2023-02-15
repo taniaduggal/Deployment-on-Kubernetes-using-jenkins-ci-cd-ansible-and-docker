@@ -6,7 +6,7 @@ metadata:
     app: thedevopsgirl
 spec:
   ports:
-    - port: 8080
+    - port: 8888
       targetPort: 80
       nodePort: 31200
   selectors:
