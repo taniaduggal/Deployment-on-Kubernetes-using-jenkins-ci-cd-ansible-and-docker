@@ -1,3 +1,4 @@
+---
 - hosts: all
   become: true
   tasks:
@@ -5,3 +6,4 @@
         command: kubectl apply -f Deployment.yaml
       - name: create new service
         command: kubectl apply -f Service.yaml
+        ignore_errors: yes
