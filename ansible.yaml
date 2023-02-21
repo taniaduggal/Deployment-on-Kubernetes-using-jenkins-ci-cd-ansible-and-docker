@@ -3,7 +3,7 @@
   become: true
   tasks:
       - name: create new deplpoyment
-        command: kubectl apply -f Deployment.yaml
+        command: kubectl apply -f /home/ubuntu/Deployment.yaml
       - name: create new service
-        command: kubectl apply -f Service.yaml
-        ignore_errors: yes
+        command: kubectl apply -f /home/ubuntu/Service.yaml
+       
