@@ -19,6 +19,4 @@ Transferred file using Jenkins to Kubernetes cluster(Deployments & Serives)
 
 Executing Ansible playbooks for Deployments Of kubernetes pods and services using Ansible.
 
-Error Rectifications...
-
 How to ssh remote server and execute things
